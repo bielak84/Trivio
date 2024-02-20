@@ -7,5 +7,12 @@
         public string QuizzDescription { get; set; }
         public string QuizzAnswer { get; set;}
         public string QuizzType { get; set;}
+
+        public Quizz()
+        {
+                
+        }
     }
+
+    
 }
