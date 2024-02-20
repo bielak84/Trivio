@@ -1,14 +1,6 @@
-﻿using System;
-
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class Quiz
+﻿namespace Trivio.Models
 {
-	public Quiz()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    public class Quiz
+    {
+    }
 }
