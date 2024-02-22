@@ -35,10 +35,16 @@ entity "Wyniki" {
   DataRozwiazania (DATETIME)
 }
 
+entity "Uprawnienia" {
+  + ID_Uprawnienia (PK, INT, AutoIncrement)
+  Rodzaj (VARCHAR)
+}
+
+U¿ytkownicy }-- Uprawnienia : Posiada
+
 U¿ytkownicy --{ Quizy : Tworzy
 Quizy }-- Pytania : Zawiera
 Pytania }-- Odpowiedzi : Zawiera
 Wyniki }-- U¿ytkownicy : Przypisane do
-Wyniki }-- Quizy : Zwi¹zane z
+Wyniki }-- Quizy : Zwišzane z
 @enduml
-
