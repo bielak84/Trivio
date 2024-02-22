@@ -27,14 +27,6 @@ entity "Odpowiedzi" {
   Poprawna (BOOL)
 }
 
-entity "Wyniki" {
-  + ID_Wyniku (PK, INT, AutoIncrement)
-  ID_Uzytkownika (FK, U¿ytkownicy.ID_Uzytkownika)
-  ID_Quizu (FK, Quizy.ID_Quizu)
-  Wynik (INT)
-  DataRozwiazania (DATETIME)
-}
-
 entity "Uprawnienia" {
   + ID_Uprawnienia (PK, INT, AutoIncrement)
   Rodzaj (VARCHAR)
