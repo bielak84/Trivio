@@ -1,7 +1,6 @@
 //Projekt SQL
 
 @startuml
-
 entity "U퓓tkownicy" {
   + ID_Uzytkownika (PK, INT, AutoIncrement)
   Login (VARCHAR)
@@ -10,21 +9,9 @@ entity "U퓓tkownicy" {
   Rola (VARCHAR)
 }
 
-entity "KategorieQuizow" {
-  + ID_Kategorii (PK, INT, AutoIncrement)
-  NazwaKategorii (VARCHAR)
-}
-
-entity "PoziomyTrudnosci" {
-  + ID_Poziomu (PK, INT, AutoIncrement)
-  NazwaPoziomu (VARCHAR)
-}
-
 entity "Quizy" {
   + ID_Quizu (PK, INT, AutoIncrement)
   ID_Tworcy (FK, U퓓tkownicy.ID_Uzytkownika)
-  ID_Kategorii (FK, KategorieQuizow.ID_Kategorii)
-  ID_Poziomu (FK, PoziomyTrudnosci.ID_Poziomu)
   LiczbaPytan (INT)
   DataUtworzenia (DATETIME)
 }
@@ -51,13 +38,10 @@ entity "Wyniki" {
 }
 
 U퓓tkownicy --{ Quizy : Tworzy
-Quizy }-- KategorieQuizow : Nale퓓 do
-Quizy }-- PoziomyTrudnosci : Poziom trudno쐁i
-Pytania }-- Quizy : Zawiera
-Odpowiedzi }-- Pytania : Zawiera
+Quizy }-- Pytania : Zawiera
+Pytania }-- Odpowiedzi : Zawiera
 Wyniki }-- U퓓tkownicy : Przypisane do
 Wyniki }-- Quizy : Zwi퉨ane z
-
 @enduml
 //
 
