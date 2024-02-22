@@ -7,7 +7,7 @@ namespace Trivio.Models
     {
         public int Id { get; set; }
         public int IdQuizz { get; set; }
-        public string TrescPytania { get; set; }
+        public string TrescPytanie { get; set; }
 
         public Pytanie()
         {
