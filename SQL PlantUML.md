@@ -1,5 +1,3 @@
-//Projekt SQL
-
 @startuml
 entity "U¿ytkownicy" {
   + ID_Uzytkownika (PK, INT, AutoIncrement)
@@ -43,5 +41,4 @@ Pytania }-- Odpowiedzi : Zawiera
 Wyniki }-- U¿ytkownicy : Przypisane do
 Wyniki }-- Quizy : Zwi¹zane z
 @enduml
-//
 
